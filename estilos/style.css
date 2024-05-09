@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:radial-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header{
+    max-width: 1000px;
+    min-height: 145px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+   background: white;
+}
+
+#logo{
+    width: 110px;
+    float: left;
+    margin-left:30px ;
+}
+
+#logo img{
+    width: 170px;
+    height: 145px;
+}
+
+/*menu horizontal*/
+#menu-h{
+    max-width: 1000px;
+    min-height: 50px;
+    background: black;
+    margin: 0 auto;
+}
+
+#menu-h ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+#menu-h a{
+    color: white;
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    background: black;
+    font-family: MV Boli;
+    font-size: 18px;
+    color:chocolate ;
+}
+
+#menu-h a:hover{
+    background: gray;
+}
+
+#menu-h ul ul{
+    display: none;
+    position: absolute;
+}
+
+#menu-h ul li:hover ul{
+    display: block;
+}
+
+#banner{
+    max-width: 1000px;
+    min-height: 350px;
+    background: gray;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#banner ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+#banner li{
+    width: 100%;
+    list-style: none;
+}
+
+#banner img{ 
+    width: 100%;
+    height: 350px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+#contenedor{
+    max-width: 1000px;
+    min-height: 700px;
+    background: silver;
+    margin: 0 auto;
+}
+
+#menu-v{
+    width: 300px;
+    height: 700px;
+    background: silver;
+    float: left;
+}
+
+#menu-v img{
+    width: 20px;
+    height: 20px;
+}
+
+#menu-v ul{
+    list-style: none;
+    padding: 10px;
+}
+
+#menu-v a{
+    display: block;
+    color: black;
+    background: chocolate;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-family: MV Boli;
+    font-size: 18px;
+}
+
+#menu-v a:hover{
+    background: paleturquoise;
+}
+
+#contenido{
+    width: 700px;
+    height: 700px;
+    background-color: gray;
+    float: right;
+    padding: 15px;
+    box-sizing: border-box;
+    color: black;
+    font-family:MV Boli ;
+}
+
+#contenido h2{
+    text-align: center;
+}
+
+#contenido p{
+    margin: 0 auto;
+    text-align: center;
+font-size: 18px;
+}
+
+#contenido img{
+    width: 310px;
+    height: 310px;
+}
+
+footer{
+    max-width: 1000px;
+    min-height: 130px;
+    background: black;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+}
